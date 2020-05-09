@@ -1,0 +1,12 @@
+pluginManagement{
+    // pluginManagement {}块只能出现在settings.gradle文件中，该文件必须是文件中的第一个块
+    plugins {
+        // https://github.com/spring-gradle-plugins
+        id 'org.springframework.boot' version "${springBootVersion}"
+    }
+}
+
+rootProject.name = 'elastic-job-spring-boot'
+
+include ':elastic-job-spring-boot-autoconfigure'
+include ':elastic-job-spring-boot-starter'

@@ -1,0 +1,20 @@
+description = 'elastic-job-spring-boot-autoconfigure'
+
+jar {
+    manifest {
+        attributes 'Automatic-Module-Name': 'elastic-job-spring-boot-autoconfigure'
+    }
+}
+
+dependencies {
+
+    // import a BOM
+    api platform("org.springframework.boot:spring-boot-dependencies:${springBootVersion}")
+    api 'org.springframework.boot:spring-boot-autoconfigure'
+    api 'com.fasterxml.jackson.core:jackson-databind'
+    api "com.dangdang:elastic-job-lite-core:${elasticJobVersion}"
+    api "com.dangdang:elastic-job-lite-spring:${elasticJobVersion}"
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+}

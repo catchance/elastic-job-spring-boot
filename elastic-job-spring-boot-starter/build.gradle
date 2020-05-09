@@ -1,0 +1,13 @@
+description = 'elastic-job-spring-boot-starter'
+
+dependencies {
+    api project(":elastic-job-spring-boot-autoconfigure")
+}
+
+jar {
+    manifest {
+        attributes 'Automatic-Module-Name': 'spring.boot.starter'
+    }
+}
+
+
